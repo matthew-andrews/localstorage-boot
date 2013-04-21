@@ -1,0 +1,25 @@
+{
+  "name": "localstorage-boot",
+  "description": "LocalStorage Boot",
+  "version": "0.0.1",
+  "homepage": "http://github.com/matthew-andrews/localstorage-boot",
+  "author": {
+    "name": "Matt Andrews",
+    "email": "matt@mattandre.ws"
+  },
+  "repository": "",
+  "bugs": {
+    "url": "https://github.com/matthew-andrews/localstorage-boot/issues"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "main": "lib/app",
+  "devDependencies": {
+    "express": "*",
+    "jade": "*",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt": "*"
+  },
+  "keywords": []
+}
