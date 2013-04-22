@@ -23,6 +23,18 @@ upgrade.check();
 
 None as yet.
 
+
+### API
+
+#### `#check(callback)`
+
+(Asynchronously) requests the latest app resources (javascript and css) and stores them in CSS.
+
+TODO:
+- Later I might add in some more options to pass back to the call of the function whether there was a change or not.
+- My personal preference is for `/resources.json` json to also return a key called `hash` with the hash of the Javascript and CSS.
+- That hash could be sent up with the request to resources.json within the client side update mechanism and then server could use it to determine if the client side resources are already up - and then return `false` instead of the full (large) css/javascript resources json.
+
 ## Server side usage
 
 ```javascript
@@ -50,3 +62,11 @@ The system path to your application's built (and ideally compressed) javascript 
 #### `css` - required
 
 The system path to your application's built (and ideally compressed) css file (to be stored for offline use in localStorage).
+
+
+### API
+
+#### `#boot(req, res, next);`
+
+The express middlewear that returns the boot javascript and css (when **localstorage-boot** is used with **offline-express** the file that gets returned by this function is stored in the application cache and is used to start the app).
+
