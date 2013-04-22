@@ -68,5 +68,5 @@ The system path to your application's built (and ideally compressed) css file (t
 
 #### `#boot(req, res, next);`
 
-The express middlewear that returns the boot javascript and css (when **localstorage-boot** is used with **offline-express** the file that gets returned by this function is stored in the application cache and is used to start the app).
+The callback that returns the boot javascript and css (when **localstorage-boot** is used with **offline-express** the file that gets returned by this function is stored in the application cache and is used to start the app).
 
