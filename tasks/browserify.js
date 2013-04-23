@@ -12,7 +12,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('browserify', function() {
 		var done = this.async();
 		var files = {
-			'/../dist/client.js' : '/../client.js',
 			'/../lib/boot/dist/client.js' : '/../lib/boot/client.js'
 		};
 		var count = 0;

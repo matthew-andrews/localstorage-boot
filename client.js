@@ -1,3 +1,3 @@
 var upgrade = require('./lib/resources.json/client');
 
-console.log(upgrade);
+module.exports = upgrade;
