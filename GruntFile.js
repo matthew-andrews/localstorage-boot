@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 		uglify: {
 			iframe_client: {
 				files: {
-					'dist/boot/client.min.js': ['dist/boot/client.js'],
+					'lib/boot/dist/client.min.js': ['lib/boot/dist/client.js'],
 					'dist/client.min.js': ['dist/client.js']
 				}
 			}
