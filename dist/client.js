@@ -47,7 +47,7 @@ function check(callback) {
 	// I promised.
 	reqwest({ url: '/resources.json', type: 'json' })
 		.then(function(resp) {
-			storeResources(resp.content, callback);
+			storeResources(resp, callback);
 		})
 		.fail(function(err) {
 			callback(err);
